@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de metragens</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+        <div class="content">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Banco_Ita%C3%BA_logo.svg/1011px-Banco_Ita%C3%BA_logo.svg.png" alt="">
+
+            <div class="app" id="app">
+                <H1>Calculadora de metragens</H1>
+                <p>
+                    <b>Preencha os campos corretamente e clique em calcular | No momento só esta disponível o calculo para conexoes diretas</b>
+                </p>
+                <hr>
+                <label>Cabeamento direto ?
+                    <select name="" id="">
+                        <option value="">Sim</option>
+                        <option value="">Não</option>
+                    </select>
+                </label>
+
+                <label>Tipo de cabo
+                    <select name="" id="">
+                        <option value="">Metalico</option>
+                        <option value="">Fibra</option>  
+                    </select>
+                </label>
+
+                <label>Via de lançamento
+                    <select name="" id="">
+                        <option value="">Topo do rack</option>
+                        <option value="">Wyr Grid</option> 
+                        <option value="">Fiber Runner - A </option>
+                        <option value="">Fiber Runner - B</option> 
+                        <option value="">Leito aramado</option>
+                    </select>
+                </label>
+
+                <hr>
+
+                <label>Rack - DE<input type="text" id="nome" ></label>
+                <label>Posição no rack<input type="text" id="nome" ></label>
+                <label>Lado saida 
+                    <select name="" id="">
+                        <option value="">Esquerda</option>
+                        <option value="">Direita</option>
+                    </select>
+                </label>
+
+                <hr>
+
+                <label>Rack - PARA<input type="text" id="nome" ></label>
+                <label>Posição no rack<input type="text" id="nome" ></label>
+                <label>Lado entrada 
+                    <select name="" id="">
+                        <option value="">Esquerda</option>
+                        <option value="">Direita</option>
+                    </select>
+                </label>
+
+                <hr>
+
+                <label>Qtd pisos<input type="text" id="nome" ></label>
+
+            
+                <button id="btnCalc">Calcular</button>
+            </div>
+            
+            <div class="app" id = "resultado">
+                <p><b>Resultado:</b></p>
+                <input type="text" id="textResultado">
+                <button id="clear">Calcular novamente</button>
+            </div>
+        
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
